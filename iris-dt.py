@@ -28,7 +28,7 @@ y = iris.target
 X_train,X_test,y_train,y_test = train_test_split(X,y,test_size=0.2,random_state=42)
 
 # Define the parameter for the random forest 
-max_depth=20
+max_depth=10
 
 # apply ml flow
 
