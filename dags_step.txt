@@ -1,0 +1,10 @@
+import dagshub
+dagshub.init(repo_owner='AMR-ITH', repo_name='mlflow-dagshub-demo', mlflow=True)
+
+import mlflow
+with mlflow.start_run():
+  mlflow.log_param('parameter name', 'value')
+  mlflow.log_metric('metric name', 1)
+  
+  
+https://dagshub.com/AMR-ITH/mlflow-dagshub-demo.mlflow
